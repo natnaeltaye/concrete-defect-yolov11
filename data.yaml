@@ -1,0 +1,14 @@
+path: /home/natnael/refined-concrete-defect-dataset-06142025
+train: train
+val: val
+
+names:
+  0: Crack
+  1: ACrack
+  2: Efflorescence
+  3: WConccor
+  4: Spalling
+  5: Wetspot
+  6: Rust
+  7: ExposedRebars
+
