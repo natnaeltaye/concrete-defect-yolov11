@@ -30,6 +30,24 @@ On this VM, it is located at:
 
 ---
 
+## 🛠️ Custom YOLOv11 Code
+
+This repo includes a **fully customized YOLOv11 implementation** inside:
+
+```
+yolov11_custom/
+```
+
+
+Key customizations:
+- Draws **polygon outlines** only (no shaded masks or rectangles)
+- **Class labels only**, without confidence scores
+- Applied to both **image** and **video** predictions
+
+> The original YOLOv11 code was adapted and preserved for further training, export, and ONNX conversion.
+
+---
+
 ## 🏋️ Training
 
 To train the model, run:
@@ -84,4 +102,20 @@ Predictions will be saved to:
 ```
 runs/segment/predict/
 ```
+
+---
+
+## 🚀 Deployment (ONNX + FastAPI)
+The model is also exported to ONNX format and served via a FastAPI web app for real-time inference.
+Deployment scripts and backend code are available in the separate repo:
+
+yolo11-fastapi-app/
+
+---
+
+## 🙌 Acknowledgments
+Based on YOLOv11
+
+Dataset collected and annotated as part of NCRPC SMART Grant
+
 
