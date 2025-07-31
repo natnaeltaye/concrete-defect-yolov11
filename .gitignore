@@ -1,6 +1,15 @@
-# Ignore model weights and results
-*.pt                  # Ignore all YOLO model weight files (e.g., best.pt)
-*.cache               # Ignore cache files that might be created
-runs/                 # Ignore training/inference output folders (usually large)
-__pycache__/          # Ignore Python's auto-generated cache
-.DS_Store             # Ignore Mac system file (useless clutter)
+# Ignore model weights and large outputs
+*.pt                  # YOLO model weight files (e.g., best.pt)
+runs/                 # Training and prediction outputs
+
+# Ignore cache files
+*.cache               # General cache
+__pycache__/          # Python bytecode cache
+*.pyc                 # Compiled Python files
+
+# Ignore system files
+.DS_Store             # macOS file (if using Mac)
+
+# Ignore logs and temporary files
+*.log
+*.tmp

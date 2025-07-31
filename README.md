@@ -118,4 +118,14 @@ Based on YOLOv11
 
 Dataset collected and annotated as part of NCRPC SMART Grant
 
+---
+
+## 📦 Environment Setup
+
+To recreate the environment:
+
+```bash
+python3 -m venv yolovenv
+source yolovenv/bin/activate
+pip install -r requirements.txt
 
