@@ -129,3 +129,9 @@ python3 -m venv yolovenv
 source yolovenv/bin/activate
 pip install -r requirements.txt
 
+
+## Reproduction Paths
+
+- **VM workflow**: see `vm/` for training on a virtual machine.
+- **Google Colab workflow**: see `colab/` for the end-to-end Colab notebook and helper scripts.
+  - One-click: use the Colab badge inside `colab/README.md`.

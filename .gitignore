@@ -13,3 +13,25 @@ __pycache__/          # Python bytecode cache
 # Ignore logs and temporary files
 *.log
 *.tmp
+
+# Large/ephemeral artifacts
+*.pt
+*.onnx
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.m4v
+*.zip
+*.tar
+*.tar.gz
+*.7z
+.DS_Store
+
+# YOLO & Colab outputs
+yolo_runs/
+runs/
+outputs/
+*.json
+*.csv
+*.xlsx
