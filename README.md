@@ -83,7 +83,7 @@ source yolovenv/bin/activate
 yolo task=segment mode=predict \
   model="/home/natnael/refined-concrete-defect-dataset-06142025/runs/segment/train3/weights/best.pt" \
   source="/home/natnael/test cowley" \
-  conf=0.25 save=True
+  conf=0.5 save=True
 ```
 
 ---
@@ -98,7 +98,7 @@ source yolovenv/bin/activate
 yolo task=segment mode=predict \
   model="/home/natnael/refined-concrete-defect-dataset-06142025/runs/segment/train3/weights/best.pt" \
   source="/home/natnael/test cowley videos 2" \
-  conf=0.25 save=True
+  conf=0.5 save=True
 ```
 
 Predictions will be saved to:
@@ -139,3 +139,11 @@ pip install -r requirements.txt
 - **VM workflow**: see `vm/` for training on a virtual machine.
 - **Google Colab workflow**: see `colab/` for the end-to-end Colab notebook and helper scripts.
 - One-click: use the Colab badge inside `colab/README.md`.
+
+📸 Sample Results
+Image Prediction
+![Diaphram over Pier 1- moderate scaling and thin spall](https://github.com/user-attachments/assets/4b58d0c7-9aea-4a0e-bf64-04208ec17859)
+
+
+Video Prediction
+![Capture9](https://github.com/user-attachments/assets/93120aa0-00aa-4e92-b2a9-ab2e7bef55fb)
