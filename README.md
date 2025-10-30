@@ -142,8 +142,9 @@ pip install -r requirements.txt
 
 📸 Sample Results
 Image Prediction
-![Diaphram over Pier 1- moderate scaling and thin spall](https://github.com/user-attachments/assets/4b58d0c7-9aea-4a0e-bf64-04208ec17859)
-
+![Image Prediction](assets/sample_image_1.jpg)
+![Image Prediction](assets/sample_image_2.jpg)
+![Image Prediction](assets/sample_image_3.jpg)
 
 Video Prediction
-![Capture9](https://github.com/user-attachments/assets/93120aa0-00aa-4e92-b2a9-ab2e7bef55fb)
+![Video Prediction](assets/sample_video.JPG)
