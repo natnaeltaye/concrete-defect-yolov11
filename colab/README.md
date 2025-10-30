@@ -16,5 +16,5 @@ https://colab.research.google.com/github/natnaeltaye/concrete-defect-yolov11/blo
 
 ## Notes
 - Results save to Drive under `/content/drive/MyDrive/yolo_runs`.
-- Do not commit large outputs or model weights (`*.pt`, `*.onnx`). Use Zenodo or GitHub Releases and link them.
+- Do not commit large outputs or model weights (`*.pt`, `*.onnx`).
 - Hyperparameters and data YAML are defined in the notebook and scripts for reproducibility.
