@@ -1,10 +1,9 @@
-# Concrete Defect Detection using YOLOv11
+🏗️ Concrete Defect Detection wiht YOLOv11
 
-This project trains a YOLOv11 segmentation model to detect 8 types of defects in concrete bridge structures.
+This project develops and trains a YOLOv11 segmentation model to detect and outline eight types of defects in concrete bridge structures.
+It is part of the NCRPC SMART Grant initiative for AI-enabled bridge inspection and asset management.
 
----
-
-## 📁 Dataset
+📁 Dataset
 
 The dataset is stored in Google Drive and the SMART Data Management Platform.  
 On this VM, it is located at:
@@ -20,9 +19,9 @@ On this VM, it is located at:
 ## 🧠 Classes
 
 - Crack  
-- ACrack  
+- ACrack (Alligator cracks)
 - Efflorescence  
-- WConccor  
+- WConccor (Water–Concrete corrosion) 
 - Spalling  
 - Wetspot  
 - Rust  
@@ -40,9 +39,14 @@ yolov11_custom/
 
 
 Key customizations:
-- Draws **polygon outlines** only (no shaded masks or rectangles)
-- **Class labels only**, without confidence scores
-- Applied to both **image** and **video** predictions
+- Polygon outlines only with class labels (no boxes, shaded masks, or confidences)
+- Overlay of per-image defect counts directly on annotated outputs
+- Structured JSON exports (labels, bounding boxes, polygons, confidence, pixel area)
+- Per-image/video class count text files for quick summaries
+- Cropped regions of defects for downstream VLM/AI analysis
+- Video deduplication via hybrid ByteTrack + IoU filtering
+- Frame-stride sampling for long drone sequences
+- Full YOLOv11 functionality preserved (training, export, ONNX)
 
 > The original YOLOv11 code was adapted and preserved for further training, export, and ONNX conversion.
 
@@ -59,7 +63,7 @@ bash scripts/train.sh
 This script:
 - Activates the YOLOv11 virtual environment
 - Launches training using `yolo11x-seg.pt`
-- Applies extensive data augmentation
+- Applies data augmentation (rotation, flipping, color jitter, etc.)
 
 ---
 
